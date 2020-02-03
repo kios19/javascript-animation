@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    overflow-y: hidden;
+}
+
+.night{
+    height: 80vh;
+    width: 70vw;
+    border: 1px solid black;
+    margin: 5rem auto;
+    background: url('./assets/Img_1.png');
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgb(0, 0,0, 0.4);
+    overflow-x: hidden;
+
+}
+.surface{
+    height: 140px;
+    width: 24550%;
+    background: url('./assets/Img_02.png');
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    
+}
+
+.car{
+    position: absolute;
+    bottom: 8%;
+    left:24%;
+    
+}
+
+@keyframes moveRight{
+    100%{transform: translateX(-2950px);}
+}
+@keyframes speeda{
+    100%{transform: translateX(-350px);}
+}
+
+@keyframes speedb{
+    100%{transform: translateX(-950px);}
+}
+@keyframes speedc{
+    100%{transform: translateX(-1500px);}
+}
+@keyframes speedd{
+    100%{transform: translateX(-2000px);}
+}
+
+@keyframes stopthere{
+    100%{transform: translateX(150px);}
+}
+
+@keyframes suspension{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform:translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+@keyframes suspensionbreak{
+    100%{
+        transform: translateY(-10px);
+    }
+
+}
+.brakes{
+    animation: stopthere 3s linear ;
+}
+.moveone{
+    animation: speeda 6s linear infinite;
+}
+
+.movetwo{
+    animation: speedb 6s linear infinite;
+}
+.movethree{
+    animation: speedc 6s linear infinite;
+}
+.movefour{
+    animation: speedd 6s linear infinite;
+}
+.moveRight{
+    animation: moveRight 6s linear infinite;
+}
+.moveBack{
+    animation: moveLeft 6s linear infinite;
+}
+
+.suspension{
+    animation: suspension 1s linear infinite;
+}
